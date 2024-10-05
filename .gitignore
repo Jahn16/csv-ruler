@@ -10,3 +10,6 @@ wheels/
 .venv
 
 .direnv
+
+# Nix pre-commit
+/.pre-commit-config.yaml
