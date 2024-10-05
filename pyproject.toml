@@ -1,0 +1,18 @@
+[project]
+name = "csv-ruler"
+version = "0.1.0"
+dependencies = []
+requires-python = ">=3.8"
+authors = [
+    { name = "Jahn16", email = "jpdeoliveiraferreira@gmail.com" },
+]
+description = "Transform csv files based on custom rules"
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pspm"
+]
