@@ -1,7 +1,9 @@
 [project]
 name = "csv-ruler"
 version = "0.1.0"
-dependencies = []
+dependencies = [
+    "fastapi",
+]
 requires-python = ">=3.8"
 authors = [
     { name = "Jahn16", email = "jpdeoliveiraferreira@gmail.com" },
@@ -9,10 +11,10 @@ authors = [
 description = "Transform csv files based on custom rules"
 readme = "README.md"
 classifiers = [
-  "Programming Language :: Python",
+    "Programming Language :: Python",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pspm"
+    "pspm",
 ]
