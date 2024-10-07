@@ -19,3 +19,32 @@ dev = [
     "pspm",
     "fastapi[standard]",
 ]
+
+[tool.ruff]
+preview = true
+line-length = 79
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+ignore = [
+    "CPY",
+    "COM812",
+    "D1",
+]
+extend-safe-fixes = [
+    "FA102",
+]
+exclude = [
+    "tests/*",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+docstring-code-format = false
+
+[tool.mypy]
+strict = true
