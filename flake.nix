@@ -24,7 +24,7 @@
                   enable = true;
                   excludes = [ "tests" ];
                   extraPackages = with pkgs.python312Packages; [
-                    types-toml
+                    fastapi
                   ];
                 };
                 ruff = {
