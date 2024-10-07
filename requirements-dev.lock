@@ -7,28 +7,55 @@ annotated-types==0.7.0
 anyio==4.6.0
     # via
     #   -c requirements.lock
+    #   httpx
     #   starlette
+    #   watchfiles
+certifi==2024.8.30
+    # via
+    #   httpcore
+    #   httpx
 click==8.1.7
-    # via typer
+    # via
+    #   typer
+    #   uvicorn
 colorama==0.4.6
     # via copier
 copier==9.3.1
     # via pspm
+dnspython==2.7.0
+    # via email-validator
 dunamai==1.22.0
     # via copier
+email-validator==2.2.0
+    # via fastapi
 fastapi==0.115.0
     # via
     #   -c requirements.lock
     #   csv-ruler (pyproject.toml)
+fastapi-cli==0.0.5
+    # via fastapi
 funcy==2.0
     # via copier
+h11==0.14.0
+    # via
+    #   httpcore
+    #   uvicorn
+httpcore==1.0.6
+    # via httpx
+httptools==0.6.1
+    # via uvicorn
+httpx==0.27.2
+    # via fastapi
 idna==3.10
     # via
     #   -c requirements.lock
     #   anyio
+    #   email-validator
+    #   httpx
 jinja2==3.1.4
     # via
     #   copier
+    #   fastapi
     #   jinja2-ansible-filters
 jinja2-ansible-filters==1.3.2
     # via copier
@@ -63,10 +90,15 @@ pygments==2.18.0
     # via
     #   copier
     #   rich
+python-dotenv==1.0.1
+    # via uvicorn
+python-multipart==0.0.12
+    # via fastapi
 pyyaml==6.0.2
     # via
     #   copier
     #   jinja2-ansible-filters
+    #   uvicorn
 questionary==2.0.1
     # via copier
 rich==13.9.2
@@ -77,6 +109,7 @@ sniffio==1.3.1
     # via
     #   -c requirements.lock
     #   anyio
+    #   httpx
 starlette==0.38.6
     # via
     #   -c requirements.lock
@@ -84,7 +117,9 @@ starlette==0.38.6
 tomli-w==1.0.0
     # via pspm
 typer==0.12.5
-    # via pspm
+    # via
+    #   fastapi-cli
+    #   pspm
 typing-extensions==4.12.2
     # via
     #   -c requirements.lock
@@ -92,5 +127,15 @@ typing-extensions==4.12.2
     #   pydantic
     #   pydantic-core
     #   typer
+uvicorn==0.31.0
+    # via
+    #   fastapi
+    #   fastapi-cli
+uvloop==0.20.0
+    # via uvicorn
+watchfiles==0.24.0
+    # via uvicorn
 wcwidth==0.2.13
     # via prompt-toolkit
+websockets==13.1
+    # via uvicorn

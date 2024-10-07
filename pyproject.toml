@@ -17,4 +17,5 @@ classifiers = [
 [project.optional-dependencies]
 dev = [
     "pspm",
+    "fastapi[standard]",
 ]
